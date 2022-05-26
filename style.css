@@ -1,0 +1,263 @@
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color:#141414;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom:1000px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  background:transparent;   
+  height:60px;
+  z-index:11;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;  
+  transition:all .2s ;  
+  padding: 5px 0 ;
+}
+
+.navigation .logo{
+    width:130px;
+    padding-left:30px;
+    margin-top:10px;
+    margin-right:15px;
+}
+
+.logo-navibar {
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+.navi-bar {
+    display:flex;
+}
+
+.navi-bar ul {
+    display:flex;
+}
+.navi-bar ul li {
+    color:white;
+    padding-left:15px;
+    margin:0 5px;
+    padding-top:22px;
+}
+
+.navi-bar ul li:hover{
+    cursor:pointer;
+}
+
+.navi-bar ul li:first-child{
+    margin-left:35px !important;
+    font-weight: 700;
+}
+
+.search-container {
+    position:absolute;
+    right:20px;
+    top:0;
+}
+
+.search {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:5px;
+   /* margin-bottom:20px; */
+}
+
+.search  img {
+    width:30px;
+    margin:10px;
+}
+
+.search .down {
+    width:10px;
+    margin:0 8px;
+    margin-right:35px;
+}
+
+.search .avatar{
+    width:40px;
+    border-radius:10px;
+}
+
+.search p {
+    color:White;
+    margin:0 10px;
+    font-size:0.90rem;
+}
+
+.section-container{
+    background-image:url(./images/avangers.jpg);
+    background-position: center;
+    background-size: cover;
+    height:80vh;
+    width:1200;  
+    display:flex;
+    align-items: center;
+}
+.container-film-info{
+    position:relative;
+    left:120px;
+}
+
+.filmlogo {
+    display:flex; 
+    align-items: center;   
+}
+
+.filmlogo p {
+    font-weight: 800;
+    background-color:rgba(0, 0, 0, 0.496);
+    padding:5px;
+    border-radius: 5px;
+    color:white;
+    margin-left:10px;
+    font-size:1.5rem;
+    letter-spacing: 3px;
+}
+
+.filmlogo img {
+    width:30px;
+}
+
+.numberOne {
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.numberOne p {
+    color:White;
+    font-weight: 900;
+    font-size:1.5rem;
+    background-color:rgba(0, 0, 0, 0.496);
+    padding:5px;
+    border-radius:10px;
+}
+
+.top10 {
+    width:100px;
+}
+
+.avangers{
+    margin-top:15px;
+    text-align: center;
+}
+
+.avangers p {
+    color:white;
+    font-weight: 900;
+    font-size:4rem;
+    letter-spacing: 5px;
+    background-color:rgba(0, 0, 0, 0.496);
+    border-radius: 10px;
+    padding:3px;
+}
+
+.movie-info {
+    display:flex;
+    max-width: 500px;
+    margin-top:25px;
+    margin-left:45px;
+}
+.movie-info p {
+    color:White;
+    font-weight: 700;
+    font-size:1rem;
+    line-height:30px;
+}
+.buttons {
+    display:flex;
+    justify-content: center;
+    margin-top:20px;
+    align-items: center;
+}
+.buttons .play{
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttons .play  {
+    background-color:white;
+    font-weight: 900;
+    font-size: 1.5rem;
+    color:black;
+    padding:15px;
+    width:200px;
+    border-radius:10px;
+    height:55px;
+}
+.buttons .play img {
+    width:40px;
+    margin: 0 10px;
+    padding-right:10px;
+}
+
+.buttons .play:hover{
+    cursor: pointer;
+    background-color:rgba(255, 255, 255, 0.913)
+}
+
+.moreinformation{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:10px;
+    background-color:#000000c8;
+    font-weight: 900;
+    font-size: 1.5rem;
+    color:white;
+    padding:15px;
+    width:330px;
+    border-radius:10px;
+    height:55px;
+
+}.moreinformation img {
+    width:40px;   
+    margin:10px;
+}
+
+.moreinformation:hover{
+    cursor:pointer;
+    background-color:rgba(255, 255, 255, 0.337);
+}
+
+.allmovies {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position: absolute;
+    bottom:120px;
+    right:90px;
+}
+
+.movie{
+    overflow: hidden; 
+}
+
+.allmovies .movie img {
+    width:250px;
+    margin:0 10px;   
+    
+}
+
+.allmovies .movie:hover img {
+    transform: scale(1.2);
+}
